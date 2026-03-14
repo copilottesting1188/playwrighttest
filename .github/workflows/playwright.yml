@@ -39,8 +39,8 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-html-report
-          path: playwright-report/
+          name: my-report
+          path: my-report/
 
       - name: Upload Allure Report
         uses: actions/upload-artifact@v4
