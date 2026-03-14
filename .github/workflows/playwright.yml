@@ -48,3 +48,9 @@ jobs:
         with:
           name: allure-report
           path: allure-report/
+      - name: Upload Playwright Test Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results
+          path: allure-results/
